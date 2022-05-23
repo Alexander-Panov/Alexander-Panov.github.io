@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ABC-Lab</title>
+
+    <meta name="author" content="Александр Панов">
+    <meta name="description" content="Поиск ABC-троек среди всех остальных троек. Просто вбейте, до какого числа искать и программа найдет их все вплоть до этого числа">
+    
+    <link type="image/png" sizes="16x16" rel="icon" href="../images/icons/icons8-abc-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="../images/icons/icons8-abc-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="../images/icons/icons8-abc-96.png">
+
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+    <!-- Стиль для меню на мобильных устройствах -->
+    <link rel="stylesheet" href="../styles/media.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo/icons8-abc-80.png" alt="Логотип ABC-Lab" width="80" height="80">
+                <h1>ABC-Lab</h1>
+            </a>
+        </div>
+        <nav class="dws-menu">
+            <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+            <label for="menu" class="toggleMenu">Меню</label>
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+                        <a>Теория</a>
+                        <label for="sub_m1" class="toggleSubmenu"></label>  
+                        <ul class="dropdown-content">
+                            <li><a href="../theory/what-is-radical.html">Что такое радикал?</a></li>
+                            <li><a href="../theory/coprime.html">Взаимно простые числа</a></li>
+                            <li><a href="../theory/theorem.html">Теорема об ABC-тройках</a></li>
+                            <li><a href="../theory/consequences.html">Следствия теоремы об ABC-тройках</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m2">
+                        <a>Практика</a>
+                        <label for="sub_m2" class="toggleSubmenu"></label>  
+                        <ul class="dropdown-content">
+                            <li><a href="../practice/find-radical.html">Поиск радикалов</a></li>
+                            <li><a href="../practice/is-coprime.html">Взаимно ли просты?</a></li>
+                            <li><a href="../practice/find-ABC.html">Это тройка ABC?</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m3">
+                        <a>Эксперименты</a>
+                        <label for="sub_m3" class="toggleSubmenu"></label>  
+                        <ul class="dropdown-content">
+                            <li><a href="abc-quantity.html">Сколько всего троек?</a></li>
+                            <li><a href="/">Поиск ABC-троек</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="../materials.html">Материалы</a></li>
+            </ul>
+            </nav>
+    </header>
+  
+    <!-- Здесь основное содержимое нашей страницы -->
+    <main>
+    <!-- Она содержит статью -->
+        <article>
+            <h2>Поиск ABC-троек</h2>
+            <p>Введите до какого числа сделать поиск:</p>
+            <input id="input">
+            <button id="button">Искать</button>
+            <div id="output"></div>
+        </article>  
+    </main>
+  
+      <!-- И вот наш главный нижний колонтитул, который используется на всех страницах нашего веб-сайта -->
+  
+    <footer>
+        <p>©Александр Панов, 2022<br>Сайт сделан по проекту кафедры Алгоритмической математики СПбГЭТУ "ЛЭТИ"</p>
+    </footer>
+
+    <!-- Скрипт теста -->
+    <script src="../scripts/abc-search.js"></script>
+</body>
+</html>
