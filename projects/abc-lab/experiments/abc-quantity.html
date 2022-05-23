@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" prefix="og: http://ogp.me/ns#">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +8,16 @@
     <title>ABC-Lab</title>
 
     <meta name="author" content="Александр Панов">
-    <meta name="description" content="Материалы по теме, различные полезные статьи и ссылки, лекции по гипотезе о тройках ABC">
+    <meta name="description" content="Количество ABC-троек среди всех остальных. Наглядный график распределения">
     
-    <link type="image/png" sizes="16x16" rel="icon" href="images/icons/icons8-abc-16.png">
-    <link type="image/png" sizes="32x32" rel="icon" href="images/icons/icons8-abc-32.png">
-    <link type="image/png" sizes="96x96" rel="icon" href="images/icons/icons8-abc-96.png">
+    <link type="image/png" sizes="16x16" rel="icon" href="../images/icons/icons8-abc-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="../images/icons/icons8-abc-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="../images/icons/icons8-abc-96.png">
 
     <!-- Подключаем стили -->
-    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="../styles/styles.css" type="text/css">
     <!-- Стиль для меню на мобильных устройствах -->
-    <link rel="stylesheet" href="styles/media.css" type="text/css">
+    <link rel="stylesheet" href="../styles/media.css" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,8 +30,8 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo/icons8-abc-80.png" alt="Логотип ABC-Lab" width="80" height="80">
+            <a href="../index.html">
+                <img src="../images/logo/icons8-abc-80.png" alt="Логотип ABC-Lab" width="80" height="80">
                 <h1>ABC-Lab</h1>
             </a>
         </div>
@@ -45,10 +45,10 @@
                         <a>Теория</a>
                         <label for="sub_m1" class="toggleSubmenu"></label>  
                         <ul class="dropdown-content">
-                            <li><a href="theory/what-is-radical.html">Что такое радикал?</a></li>
-                            <li><a href="theory/coprime.html">Взаимно простые числа</a></li>
-                            <li><a href="theory/theorem.html">Теорема об ABC-тройках</a></li>
-                            <li><a href="theory/consequences.html">Следствия теоремы об ABC-тройках</a></li>
+                            <li><a href="../theory/what-is-radical.html">Что такое радикал?</a></li>
+                            <li><a href="../theory/coprime.html">Взаимно простые числа</a></li>
+                            <li><a href="../theory/theorem.html">Теорема об ABC-тройках</a></li>
+                            <li><a href="../theory/consequences.html">Следствия теоремы об ABC-тройках</a></li>
                         </ul>
                     </div>
                 </li>
@@ -58,9 +58,9 @@
                         <a>Практика</a>
                         <label for="sub_m2" class="toggleSubmenu"></label>  
                         <ul class="dropdown-content">
-                            <li><a href="practice/find-radical.html">Поиск радикалов</a></li>
-                            <li><a href="practice/is-coprime.html">Взаимно ли просты?</a></li>
-                            <li><a href="practice/find-ABC.html">Это тройка ABC?</a></li>
+                            <li><a href="../practice/find-radical.html">Поиск радикалов</a></li>
+                            <li><a href="../practice/is-coprime.html">Взаимно ли просты?</a></li>
+                            <li><a href="../practice/find-ABC.html">Это тройка ABC?</a></li>
                         </ul>
                     </div>
                 </li>
@@ -70,12 +70,12 @@
                         <a>Эксперименты</a>
                         <label for="sub_m3" class="toggleSubmenu"></label>  
                         <ul class="dropdown-content">
-                            <li><a href="experiments/abc-quantity.html">Сколько всего троек?</a></li>
-                            <li><a href="experiments/abc-search.html">Поиск ABC-троек</a></li>
+                            <li><a href="/">Сколько всего троек?</a></li>
+                            <li><a href="abc-search.html">Поиск ABC-троек</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="/">Материалы</a></li>
+                <li><a href="../materials.html">Материалы</a></li>
             </ul>
         </nav>
     </header>
@@ -84,33 +84,31 @@
     <main>
     <!-- Она содержит статью -->
         <article>
-            <h2>Материалы для самостоятельного изучения</h2>
+            <h2>График распределения ABC троек на все возможные тройки</h2>
+            <!-- <img src="https://hsto.org/webt/kb/a5/6e/kba56eolp2zumdpl0xq81fpt6oc.png" alt="График количества ABC троек по сравнению с количеством всех троек"> -->
 
-            <h3>Лекция Алексея Савватеева "Погоня за abc-тройками"</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XQV_Vb9G2QI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <h3>Лекция К.Кондрата "Что такое ABC-гипотеза?"</h3>
-
-            <a class="pdf" href="pdf/kconrad-lecture-abc.pdf">kconrad-lecture-abc.pdf</a>
-
-            <h3>Статьи на habr:</h3>
-            <ul>
-                <li><a href="https://habr.com/ru/post/427091/">Численная проверка abc-гипотезы</a></li>
-                <li><a href="https://habr.com/ru/post/426033/">Титаны от математики схлестнулись над эпичным доказательством abc-гипотезы</a></li>
-                <li><a href="https://habr.com/ru/post/183374/">Парадокс доказательства</a></li>
-            </ul>
+            <div id="myChart" style="width: auto; height: 900px; border: 1px solid #ccc; margin-top: 1em"></div>
+            <div id="categoryPicker_div"></div>
         </article>
     
         <!-- Дополнительный контент также может быть вложен в основной контент -->
-        <!-- <aside>
-        </aside> -->
+        <aside>
+        </aside>
   
     </main>
   
       <!-- И вот наш главный нижний колонтитул, который используется на всех страницах нашего веб-сайта -->
+  
     <footer>
         <p>©Александр Панов, 2022<br>Сайт сделан по проекту кафедры Алгоритмической математики СПбГЭТУ "ЛЭТИ"</p>
     </footer>
-  
+
+    <!-- Подключаем библиотеку с математикой -->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <!-- Подключаем библиотеку с графиками -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript" src="../scripts/chart.js"></script>
 </body>
 </html>

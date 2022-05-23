@@ -23,6 +23,8 @@ a {
     text-decoration: none;
     padding: 2px 1px 0;
     text-align: center;
+
+    cursor: pointer;
 }
 
 a:link {
@@ -57,17 +59,18 @@ nav a:visited {
 }
 
 nav a:focus {
-    background: #EAF3F8;
+    background: #72c7c2;
     color: #2B2B4A;
 }
 
 nav a:hover {
-    background: #EAF3F8;
+    background: #72c7c2;
     color: #2B2B4A;
+    border-radius: 5px 5px 0px 0px;
 }
 
 nav a:active {
-    background: #EAF3F8;
+    background: #ff7d5e;
     color: #2B2B4A;
 }
 
@@ -94,24 +97,6 @@ a.pdf {
 
 /* Выпадающее меню */
 
-.dropdown a {
-    background-size: 24px 24px;
-    padding-left: 30px;
-}
-.dropdown a:focus {
-    background: #EAF3F8;
-    background-size: 24px 24px;
-    padding-left: 30px;
-    color: #2B2B4A;
-}
-
-.dropdown a:hover {
-    background: #EAF3F8;
-    background-size: 24px 24px;
-    padding-left: 30px;
-    color: #2B2B4A;
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -121,8 +106,10 @@ a.pdf {
     display: none;
     position: absolute;
     background-color: #EAF3F8;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
     z-index: 1;
+
+    padding-left: 0px;
   }
   
   /* Ссылки внутри выпадающего списка */
@@ -131,22 +118,15 @@ a.pdf {
     color: #EAF3F8;
     background-color: #2B2B4A;
     padding: 12px 16px;
-    text-decoration: none;
     display: flex;
+    border-radius: 0px;
 }
-
-.dropdown-content a:link {color: #2B2B4A;}
 
 /* Изменение цвета выпадающих ссылок при наведении курсора */
 .dropdown-content a:hover a:focus {background-color: #EAF3F8;}
 
 /* Показать выпадающее меню при наведении курсора */
 .dropdown:hover .dropdown-content {display: block;}
-
-/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-
 
 
 /* Панель меню */
@@ -156,8 +136,7 @@ header {
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
-
-    height: 6em;
+    border-radius: 0px 0px 5px 5px;
 
     /* position: sticky; */
     top: 0;
@@ -169,8 +148,8 @@ header {
 }
 
 .logo a h1 {
-    font: bold 3.5em 'Inter', cursive;
-    margin: 0 0 0 0.2em;
+    font: bold 3em 'Inter', cursive;
+    margin: 0.1em 0.2em 0em;
     color: #EAF3F8;
 }
 header nav {
@@ -180,7 +159,7 @@ header nav {
 
 header nav ul {
     list-style: none;
-    margin: 0 auto 0 0;
+    margin: 0;
     
     display: flex;
     flex-flow: row wrap;
@@ -191,15 +170,13 @@ header nav ul {
 header nav a {
     font: 1.5em 'Inter', cursive;
     color: #EAF3F8;
-    padding: .5em 1em;
+    padding: 1em;
     display: block;
-    height: 3em;
-
 }
 
 /* Main */
 main {
-    margin: 1em;
+    margin: 1.25em;
 }
 
 /* Footer */
@@ -208,3 +185,63 @@ footer {
     margin: 1em;
     
 }
+/* Button */
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: 0;
+    border-radius: 5px;
+    background: #2B2B4A;
+    color: #EAF3F8;
+    padding: 8px 16px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: block;
+
+    margin: 20px 0;
+}
+
+button:hover {
+    background: #72c7c2;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #EAF3F8;
+}
+
+button:active {
+    background: #ff7d5e;
+}
+/* Для test */
+#test div{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+#test div input {
+    width: 3em;
+    height: 2em;
+    margin: 3em 0.5rem;
+    padding: 0.1rem 0.2rem;
+}
+
+#test + button {
+    font-size: 1.5em;
+
+    min-width: 300px;
+
+    margin: 20px auto 50px;
+}
+
+.correct {
+    border: 3px solid green;
+}
+.incorrect {
+    border: 3px solid red;
+}  
+
+/*Для abc-search*/
