@@ -69,8 +69,6 @@ input.toggleMenu:checked + label.toggleMenu{
      display: block;
      position: relative;
     } 
-
-    .dropdown:hover .dropdown-content{display: initial;}
 }  
 
 @media all and (max-width: 520px) {
