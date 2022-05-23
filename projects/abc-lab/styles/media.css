@@ -28,10 +28,7 @@ input.toggleMenu:checked + label.toggleMenu{
     background: #72c7c2;
     color: #EAF3F8;
    }   
-
-@media all {
-    
-}  
+   
 @media all and (max-width: 1275px) {
     header{
         display: block;
@@ -76,7 +73,7 @@ input.toggleMenu:checked + label.toggleMenu{
      position: relative;
     } 
 
-    .dropdown:hover .dropdown-content{display: none;}
+    .dropdown:hover .dropdown-content{display: initial;}
 }  
 
 @media all and (max-width: 520px) {
