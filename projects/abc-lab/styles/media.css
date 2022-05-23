@@ -28,6 +28,10 @@ input.toggleMenu:checked + label.toggleMenu{
     background: #72c7c2;
     color: #EAF3F8;
    }   
+@media all and (min-width: 1276px) {
+    /* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content{display: block ;}
+}
    
 @media all and (max-width: 1275px) {
     header{

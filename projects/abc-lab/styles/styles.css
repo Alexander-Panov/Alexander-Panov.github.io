@@ -125,9 +125,6 @@ a.pdf {
 /* Изменение цвета выпадающих ссылок при наведении курсора */
 .dropdown-content a:hover a:focus {background-color: #EAF3F8;}
 
-/* Показать выпадающее меню при наведении курсора */
-.dropdown:hover .dropdown-content{display: block ;}
-
 /* Панель меню */
 header {
     background-color: #2B2B4A;
