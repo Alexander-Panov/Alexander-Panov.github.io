@@ -126,8 +126,7 @@ a.pdf {
 .dropdown-content a:hover a:focus {background-color: #EAF3F8;}
 
 /* Показать выпадающее меню при наведении курсора */
-.dropdown:hover .dropdown-content {display: block;}
-
+.dropdown:hover .dropdown-content{display: block ;}
 
 /* Панель меню */
 header {
@@ -168,10 +167,26 @@ header nav ul {
 }
 
 header nav a {
-    font: 1.5em 'Inter', cursive;
+    font: 1.2em 'Inter', cursive;
     color: #EAF3F8;
-    padding: 1em;
+    padding: 1.2em;
     display: block;
+}
+
+/* Images */
+main img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Iframe */
+main iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
 }
 
 /* Main */

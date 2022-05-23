@@ -3,19 +3,18 @@
     display: none;
    }
 .dws-menu label.toggleMenu{
-    font: 1.5em 'Inter', cursive;
+    font: 1.2em 'Inter', cursive;
     padding: 1em;
-    display: block;
     cursor: pointer;
 
     color: #EAF3F8;
-    background: #2B2B4A url('../images/icons/dropdown-menu.svg') no-repeat 10px 17px;
-    padding-left: 90px;
+    background: #2B2B4A url('../images/icons/dropdown-menu.svg') no-repeat 10px center/50px;
+    padding-left: 70px;
 
     display: none;
 } 
 input.toggleMenu:checked + label.toggleMenu{
-    background: #72c7c2 url('../images/icons/dropdown-menu.svg') no-repeat 10px 17px;
+    background: #72c7c2 url('../images/icons/dropdown-menu.svg') no-repeat 10px center/50px;
     color: #EAF3F8;
 } 
        
@@ -30,7 +29,9 @@ input.toggleMenu:checked + label.toggleMenu{
     color: #EAF3F8;
    }   
 
-
+@media all {
+    
+}  
 @media all and (max-width: 1275px) {
     header{
         display: block;
@@ -58,6 +59,7 @@ input.toggleMenu:checked + label.toggleMenu{
        }   
 }  
 
+
 @media all and (max-width: 800px) {
     .dws-menu ul{
         display: block;
@@ -72,5 +74,35 @@ input.toggleMenu:checked + label.toggleMenu{
     input.toggleSubmenu:checked ~ ul{
      display: block;
      position: relative;
-    }         
+    } 
+
+    .dropdown:hover .dropdown-content{display: none;}
+}  
+
+@media all and (max-width: 520px) {
+    .logo a h1 {
+        font-size: 2.5em;
+    }
+    .logo a img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .dws-menu > ul {
+        padding-left: 15px;
+    }
+
+    header nav a {
+        font-size: 1em;
+    }
+    .dws-menu label.toggleMenu{
+        font-size: 1em;
+        padding: 1em;
+
+        background-size: 40px;
+        padding-left: 65px;
+    } 
+    input.toggleMenu:checked + label.toggleMenu{
+        background-size: 40px;
+    } 
 }  
