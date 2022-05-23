@@ -59,9 +59,6 @@ input.toggleMenu:checked + label.toggleMenu{
 
 @media all and (max-width: 800px) {
     .dws-menu ul{
-        display: block;
-    }
-    .dws-menu ul{
         display: none;
     }
     .dws-menu label.toggleMenu{
