@@ -23,7 +23,7 @@ input.toggleMenu:checked + label.toggleMenu{
 .dws-menu [type="checkbox"],
 .dws-menu label.toggleSubmenu{
  display: none;
-}
+}   
    input.toggleSubmenu:checked ~ a{
     background: #72c7c2;
     color: #EAF3F8;
